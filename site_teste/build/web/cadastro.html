@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./script/acoes.js"></script>  
+        <link rel="stylesheet" type="text/css" href="./style__css__cadastro.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css3normalize/normalize.css">
+    </head>
+    
+    <body id='container'>
+        
+        <span>
+            <form method="post" action="cadastrar.jsp">  
+
+                <label for="nome"> <p>Nome</p> </label>
+                <input type="text" name="nome" size="55" id="nome">
+
+                <label for="cpf"> <p>CPF</p> </label>
+                <input oninput="mascara_cpf(this)" type="text" name="cpf" size="15" id="cpf">
+
+                <label for="endereco"> <p>Endereço</p> </label>
+                <input type="text" name="endereco" size="55" id="endereco">
+
+                <label for="telefone"> <p>Telefone</p> </label>
+                <input oninput="isNumberCheck(this)" type="tel" name="telefone" size="55" id="telefone">
+
+
+                <p>
+                    <input class="form-submit" type="submit" value="Cadastrar">
+                </p>
+            </form>
+        </span>
+    </body>
+</html>
